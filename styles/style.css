@@ -1,0 +1,162 @@
+:root {     /*Cria variaveis globais*/
+    --cor-fundo: #E8E8E8;
+    --cor-texto-entrada: #0A3871;
+    --cor-texto-explicativo: #343A40;
+    --fonte-texto: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box; /* Faz com que os conteúdos "filhos" fiquem dentro do conteúdo "pai", neste caso, o body */
+    color: var(--cor-texto-entrada);
+    margin-left: 10px;
+    padding-top: 10px;
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-texto);    
+}
+
+
+.logo {
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 120px;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.apresentacao__conteudo1 {
+    width: 70%;
+}
+
+
+.conteudo1__entrada {
+    background-color: var(--cor-fundo);
+    border: none;
+    margin-top: 40px;
+    margin-left: 240px;
+    text-transform: lowercase;
+    color: var(--cor-texto-entrada);
+    font-size: 32px;
+    font-weight: 400;
+    width: 680px;
+    height: 40rem;
+}
+
+::placeholder {
+    color: var(--cor-texto-entrada);
+    text-transform: none;
+}
+.conteudo1__entrada:focus{
+    outline: none;
+}
+
+
+.exclamacao {
+    width: 16px;
+    height: 16px;
+    padding-right: 2px;
+}
+
+
+.conteudo1__entrada__extra {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-style: normal;
+    margin-left: 240px;
+    margin-bottom: 10px;
+}
+
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 680px;
+    margin-left: 240px;
+}
+
+.botao-encriptografar {
+    background-color: var(--cor-texto-entrada);
+    color: #FFFFFF;
+    border: 1px solid var(--cor-texto-entrada);
+    border-radius: 32px;
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+    cursor: pointer;
+}
+
+.botao-desencriptografar {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-entrada);
+    font-size: 1rem;
+    border: 1px #0A3871 solid;
+    border-radius: 32px;
+    width: 328px;
+    height: 67px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.apresentacao__conteudo2 {
+    width: 60%;
+}
+
+
+.saida {
+    background-color: #FFFFFF;
+    background-image: url(/assets/home.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 32px;
+    color: var(--cor-texto-entrada);
+    position: fixed;
+    width: 400px;
+    height: 50rem;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+.mensagemvazio {
+    margin-left: 32px;
+    margin-top: 34.25rem;
+    width: 336px;
+    height: 67px;
+    color: #343A40;
+    text-align: center;
+    position: absolute;
+}
+
+.botao__copiar {
+    border: 1px solid var(--cor-texto-entrada);
+    border-radius: 32px;
+    color: var(--cor-texto-entrada);
+    padding: 24px;
+    width: 336px;
+    height: 67px;
+    margin-left: 32px;
+    margin-top: 44.25rem;
+    position: absolute;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+
+
+}
